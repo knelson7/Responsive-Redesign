@@ -1,14 +1,178 @@
 <!doctype html>
 
-<html>
+<html lang="en">
   <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <title>Redesign Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
-
   <body>
     <!-- TODO: put your HTML code here! -->
+    <div class="outer">
+
+      <div class="title">
+        <h1>Responsive Redesign Project</h1>
+      </div>
+
+      <div class="chunk">
+        <div>
+          <h4>Project Outline</h4>
+        </div>
+        <div class='paragraph'>
+          <p>
+            The goal of this project was to practice the workflow of redesigning a simple website. 
+            Through this project, I gained the skills necessary to analyze and identify flaws in an existing interface, 
+            create low-fidelity and high-fidelity prototypes for various screen sizes, and build a responsive website
+            based on those prototypes.
+          </p>
+        </div>
+      </div>
+
+      <div class="chunk">
+        <div>
+          <h4>Chosen Website: <a href="http://sanmateo.org/">sanmateo.org</a></h4>
+        </div>
+        <div class='paragraph'>
+          <p>
+            This website is dedicated to San Mateo County citizens as a way of informing them of current events, 
+            providing them with 
+            helpfpul resources, and harboring a strong sense of community.
+          </p>
+        </div>
+      </div>
+
+      <div class="image">
+        <img class="img" src="assets/sanmateo.png" alt="Image of sanmateo.org website">
+      </div>
+
+      <div class="chunk">
+        <div>
+          <h4>Interface Problems</h4>
+        </div>
+        <div class='list'>
+          <ul>
+            <li>
+              Typeface: the typeface is legible, but 
+              the random and inconsistent differences in weighting and size 
+              is distracting and doesn’t inform the hierarchy
+            </li>
+            <li>
+                Structure and Layout: there is not structure to
+               the website besides the table. Pieces of information are slapped 
+               onto the page with no underlying foundation, structure, or order
+            </li>
+            <li>
+              White Space: white space is not used effectively with 
+              some sections of the webpage displaying dense amounts of text while 
+              other sections have little to no text
+            </li>
+            <li>
+              Color: the use of color is sporadic, random, and inconsistent. The green and yellow 
+              displayed on the page doesn’t help the reader’s eyes focus on important pieces of information
+            </li>
+            <li>
+              Other notes: there are duplicate pieces of information (such as the link to San Mateo 
+              County’s official website), the random urls outside of the main table throw off any organization 
+              that the table tries to provide
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="chunk">
+        <div>
+          <h4>Accessibility Concerns</h4>
+        </div>
+        <div class='paragraph'>
+          <p>
+            WebAIM WAVE detected many possible accessibility concerns including the following: 
+            the language of the document wasn’t identified, the page has no headings, no page 
+            regions or ARIA landmarks were found, and the contrast between the green text and the 
+            background color was very low. Lastly it found that the link text contained extraneous text that may not 
+            make sense out of context. 
+          </p>
+          <p>
+            When using NVDA on the website, it would sometimes say “blank” instead of reading the next piece of 
+            text on the page. This is probably due to the website’s poor layout and 
+            structural issues. The screen reader interpreted the table of hyperlinks quite well, 
+            correctly notifying users when it switched to the next column. 
+          </p>
+        </div>
+      </div>
+      
+      
+      <h4 class="fid-title">Low-fidelity prototyping </h4>
+
+      <div class="image-caption">
+        <img class="img" src="assets/fullscreen_annotated.png" alt="image of full screen wireframe with annotations">
+      </div>
+      <p class="caption">Full Screen View</p>
+
+      
+      <div class="image-caption">
+        <img class="img" src="assets/ipad_annotated.jpg" alt="image of ipad/tablet wireframe with annotations">
+      </div>
+      <p class="caption">iPad/Tablet View</p>
+
+      <div class="image-caption">
+        <img class="img" src="assets/iphone_annotated.png" alt="image of iphone wireframe with annotations">
+      </div>
+      <p class="caption">iPhone View</p>
+
+
+
+      <h4 class="fid-title">High-fidelity prototyping </h4>
+
+      <div class="image-caption">
+        <img class="img" src="assets/fullscreen_figma.png" alt="image of iphone screen wireframe with annotations">
+      </div>
+      <p class="caption">Full Screen View</p>
+
+      
+      <div class="image-caption">
+        <img class="img" src="assets/ipad_figma_1.png" alt="image of ipad/tablet wireframe with annotations">
+      </div>
+      <p class="caption">iPad/Tablet View</p>
+
+      <div class="image-caption">
+        <img class="img" src="assets/iphone_figma.png" alt="image of iphone wireframe with annotations">
+      </div>
+      <p class="caption">iPhone View</p>
+
+
+
+      <h4 class="fid-title">Visual Design Style Guide</h4>
+      <div class="image-caption">
+        <img class="img" src="assets/style_guide.png" alt="image of style guide">
+      </div>
+
+      <div class="chunk">
+        <div>
+          <h4>Finished Product: <a href="redesign.html">Redesigned Website</a></h4>
+        </div>
+        <div class='paragraph'>
+          <p>
+            This website is dedicated to San Mateo County citizens as a way of informing them of current events, providing them with 
+            helpfpul resources, and harboring a strong sense of community. 
+          </p>
+          <p>
+            My redesigned website changes based on the size of the browser window. Most notablly, the picture of San Mateo County City Hall
+            gets bigger or smaller to fill up the correct amount of space, while still showing the full image. Additionally, the number of 
+            columns in the flexbox changes. On a full sized laptop screen, the browser shows 4 columns, with an iPad sized screen showing 2 columns
+            and an iPhone screen showing only a single column. When I changed the font size of my browser window to be as large as possible, it showed 
+            3 columns. My website's improvements were highlihgted by changing the langauge of the website since the new structure and heirarchies that 
+            I put in place greatly inform where the user can click and what content is grouped together. 
+          </p>
+        </div>
+      </div>
+
+    
+
+
+    </div>
   </body>
 </html>
